@@ -1,0 +1,18 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.same{
+    background-color: pink;
+}
+
+#number-2{
+    font-size: 32px;
+    color: blue;
+    font-weight: bold;
+}
+
+#number-4{
+    background-color: greenyellow;
+    font-weight: bold;
+}

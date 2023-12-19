@@ -1,0 +1,10 @@
+.avatar.proportioned{
+    width: 300px;
+}
+
+.avatar.distorted{
+    width: 200px;
+    height: 600px;
+}
+
+/* This is chaining selectors. We select very more specific elements by chaining their classes. */

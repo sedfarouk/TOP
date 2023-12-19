@@ -1,0 +1,16 @@
+.btn{
+    height: 30px;
+    border: solid 1px black;
+    font-size: 25px;
+}
+
+#first{
+    background-color: black;
+    color: white;
+    width: auto;
+}
+
+#second{
+    background-color: yellow;
+    width: auto;
+}
