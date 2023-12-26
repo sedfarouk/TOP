@@ -86,7 +86,7 @@ button{
 .intro{
     flex-basis: 50%;
     flex-grow: 0;
-    padding-right: 10px;
+    padding-right: 30px;
     height: 220px;
 }
 
