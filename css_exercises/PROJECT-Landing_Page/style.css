@@ -163,11 +163,19 @@ button{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    height: 100px;
+    height: 120px;
     gap: 20px;
     background-color: #3882f6;
     border-radius: 5px;
     color: white;
+}
+
+#title{
+    font-size: 24px;
+}
+
+#msg{
+    color: #e5e7eb;
 }
 
 
