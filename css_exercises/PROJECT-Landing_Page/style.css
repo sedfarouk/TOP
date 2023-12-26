@@ -19,9 +19,28 @@ p, h1, h5{
 }
 
 
-ul, #link-text{
+a, #link-text{
     font-size: 18px;
     color:#e5e7eb;
+    text-decoration: none;
+}
+
+button{
+    color: white;
+    background-color: #3882f6;
+    border-radius: 5px;
+}
+
+#signup-btn{
+    border: 2px solid white;
+    padding: 5px 20px;
+}
+
+#banner-btn{
+    padding: 7px 22px;
+    border: none;
+    margin-top: 10px;
+    font-weight: bold;
 }
 
 
@@ -36,7 +55,7 @@ ul, #link-text{
 .nav {
     display: flex;
     justify-content: space-between;
-    padding: 0px 200px;
+    padding: 0px 150px;
 }
 
 .logo-text{
@@ -50,7 +69,7 @@ ul, #link-text{
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 120px 200px;
+    padding: 120px 150px;
 }
 
 #banner-title{
@@ -68,29 +87,47 @@ ul, #link-text{
     flex-basis: 50%;
     flex-grow: 0;
     padding-right: 10px;
+    height: 220px;
 }
 
 .img-placeholder{
     flex-basis: 50%;
     flex-grow: 0;
+    background: grey;
+    height: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 
 /*Random Information Section Styling*/
-.info{
-    display:flex;
-    flex-direction:column;
-    align-items: center;
-    margin-bottom: 50px;
+#info-head{
+    font-size: 36px;
+    font-weight: bolder;
+    color: #1F2937;
+    text-align: center;
 }
 
 .profiles{
     display: flex;
-    gap: 40px;
+    gap: 100px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 70px;
+    padding: 0px 200px;
 }
 
 .profile {
-    width: 150px;
+    width: 170px;
+    text-align: center;
+}
+
+.box{
+    height: 100px;
+    border: 2px solid #3882f6;
+    border-radius: 10px;
+    margin-bottom: 10px;
 }
 
 
@@ -119,7 +156,7 @@ ul, #link-text{
 
 /*Sign Up section styling*/
 .section{
-    padding: 70px 200px;
+    padding: 70px 150px;
 }
 
 .signup{
@@ -131,14 +168,6 @@ ul, #link-text{
     background-color: #3882f6;
     border-radius: 5px;
     color: white;
-}
-
-#signup-btn{
-    padding: 5px 20px;
-    border-radius: 5px;
-    color: white;
-    background-color: #3882f6;
-    border: 2px solid white;
 }
 
 
