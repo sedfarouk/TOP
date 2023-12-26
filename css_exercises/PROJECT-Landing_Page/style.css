@@ -1,0 +1,149 @@
+/*General Styling*/
+body{
+    font-family: Roboto, 'sans-serif';
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0px 0px;
+}
+
+ul{
+    list-style: none;
+    display: inline-flex;
+    gap: 20px;
+}
+
+p, h1, h5{
+    padding: 0px;
+    margin: 0px;
+}
+
+
+ul, #link-text{
+    font-size: 18px;
+    color:#e5e7eb;
+}
+
+
+/*Common color of nav, footer and banner sections*/
+.nav, .footer, .banner{
+    background-color: #1F2937;
+    color: white;
+}
+
+
+/*Navigation bar Styling*/
+.nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 200px;
+}
+
+.logo-text{
+    font-size: 24px;
+    color: #f9faf8;
+}
+
+
+/*Banner Section Styling*/
+.banner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 120px 200px;
+}
+
+#banner-title{
+    font-size: 48px;
+    font-weight: bolder;
+    color: #f9faf8;
+}
+
+
+.main{
+    flex: 1; /*Makes footer stick at bottom*/
+}
+
+.intro{
+    flex-basis: 50%;
+    flex-grow: 0;
+    padding-right: 10px;
+}
+
+.img-placeholder{
+    flex-basis: 50%;
+    flex-grow: 0;
+}
+
+
+/*Random Information Section Styling*/
+.info{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.profiles{
+    display: flex;
+    gap: 40px;
+}
+
+.profile {
+    width: 150px;
+}
+
+
+/*Quote Section Styling*/
+.quote{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 80px 200px;
+    height: 150px;
+    background-color: #e5e7eb;
+}
+
+#quote-saying{
+    font-size:36px; 
+    opacity: 50%;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+#quote-author{
+    text-align: end;
+    font-weight: bold;
+}
+
+
+/*Sign Up section styling*/
+.section{
+    padding: 70px 200px;
+}
+
+.signup{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100px;
+    gap: 20px;
+    background-color: #3882f6;
+    border-radius: 5px;
+    color: white;
+}
+
+#signup-btn{
+    padding: 5px 20px;
+    border-radius: 5px;
+    color: white;
+    background-color: #3882f6;
+    border: 2px solid white;
+}
+
+
+/*Footer Styling*/
+.footer{
+    text-align: center;
+    padding: 30px 200px;
+}
