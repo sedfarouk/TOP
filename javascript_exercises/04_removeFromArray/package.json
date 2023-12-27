@@ -1,0 +1,11 @@
+{
+  "name": "04_removefromarray",
+  "version": "1.0.0",
+  "description": "",
+  "main": "removeFromArray.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC"
+}
