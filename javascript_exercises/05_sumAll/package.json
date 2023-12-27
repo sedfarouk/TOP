@@ -1,0 +1,11 @@
+{
+  "name": "05_sumall",
+  "version": "1.0.0",
+  "description": "",
+  "main": "sumAll.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC"
+}
