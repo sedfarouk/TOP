@@ -26,3 +26,11 @@ const btn = document.querySelector('#btn');
 btn.addEventListener('click', (e) => {
     e.target.style.backgroundColor = 'yellow';
 });
+
+const buttons = document.querySelectorAll('button');
+
+buttons.forEach((button) => {
+    button.addEventListener('click', () => {
+        alert(button.id);
+    })
+})
