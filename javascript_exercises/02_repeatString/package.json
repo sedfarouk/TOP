@@ -1,5 +1,9 @@
 {
+<<<<<<< HEAD
   "name": "02_repeatstring",
+=======
+  "name": "02_repeatString",
+>>>>>>> 3cd2fbb190a33b2ac726a7d2e7ca8751e356fe26
   "version": "1.0.0",
   "description": "",
   "main": "repeatString.js",
