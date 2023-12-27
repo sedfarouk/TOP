@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        let getComputerChoice = function(){
+            const arr = ["rock", "paper", "scissors"];
+            let randomNumber = Math.floor(Math.random()*10)%3;
+            return arr[randomNumber];
+        }
+
+        let playGame = function(playerSelection, computerSelection){
+            const output = getComputerChoice();
+            let res = "";
+            let winner = "", loser="";
+
+            if (output===playerSelection.toLowerCase()){
+                res = "Win";
+                winner = playerSelection;
+                loser = computerSelection;
+            } else if (output===computerSelection.toLowerCase()) {
+                res = "Lose";
+                winner = computerSelection;
+                loser = playerSelection;
+            }
+
+            else {
+                return "It's a tie! Play again!"
+            }
+
+            return `You ${res}! ${winner} beats ${loser}`
+        }
+
+        let game = function(){
+            let player = 0, computer = 0;
+            for (let i=0; i < 5; i++){
+                const playerChoice = prompt('Enter choice: ');
+                const computerChoice = getComputerChoice();
+                const winner = playGame(playerChoice, computerChoice);
+                console.log(winner);
+
+                if (winner.includes('Win')){
+                    player++;
+                } else if (winner.includes('Lose')){
+                    computer++;
+                }
+            }
+
+            player > computer ? console.log(`You Won! ${player} points gained`):console.log(`You Lost! ${player} points gained`)
+        } 
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
