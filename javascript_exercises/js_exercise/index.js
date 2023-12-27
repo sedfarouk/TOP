@@ -21,3 +21,8 @@ div.appendChild(subDiv);
 
 /* NB: Though not safe, the innerHTML attribute is used here to 
 keep things tidy and neat*/
+
+const btn = document.querySelector('#btn');
+btn.addEventListener('click', (e) => {
+    e.target.style.backgroundColor = 'yellow';
+});
