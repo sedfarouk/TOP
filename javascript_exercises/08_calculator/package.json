@@ -1,11 +1,11 @@
 {
   "name": "08_calculator",
   "version": "1.0.0",
-  "description": "",
   "main": "calculator.js",
   "scripts": {
     "test": "jest"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "description": ""
 }
