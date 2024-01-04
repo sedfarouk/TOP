@@ -1,0 +1,11 @@
+{
+  "name": "12_findtheoldest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "findTheOldest.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC"
+}
