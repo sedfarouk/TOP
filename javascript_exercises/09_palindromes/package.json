@@ -1,0 +1,11 @@
+{
+  "name": "09_palindromes",
+  "version": "1.0.0",
+  "description": "",
+  "main": "palindromes.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC"
+}
