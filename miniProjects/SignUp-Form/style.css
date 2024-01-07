@@ -1,3 +1,12 @@
+@font-face{
+    font-family: Norse-Bold;
+    src: url('./fonts/Norse-Bold.otf');
+}
+
+:root{
+    --dusky-green: #596D48;
+}
+
 body{
     min-height: 100vh;
     margin: 0;
@@ -8,13 +17,51 @@ body{
 h2{
     margin: 0;
 }
+
 .side{
-    background-color: blue;
+    background-image: url('./images/bg.jpg');
+    background-repeat:no-repeat;
+    background-size: cover;
     flex-basis: 35%;
+    color: white;
+    font-size: 0.7rem;
+    position: relative;
+    text-align: center;
+}
+
+.logo{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Norse-Bold, sans-serif;
+    font-size: 50px;
+    height: 70px;
+    position: absolute;
+    top: 30%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.logo>img{
+    width:fit-content;
+    height: 100%;
+    object-fit: contain;
+}
+
+.logo p{
+    margin: 0;
+}
+
+#foot{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    font-size: 7px;
+    color: rgb(200, 200, 200);
 }
 
 .main{
-    background-color: whitesmoke;
+    background-color: white;
     flex-basis: 65%;
     display: flex;
     flex-direction: column;
@@ -22,7 +69,7 @@ h2{
 }
 
 .above{
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     font-weight: 600;
 }
 
@@ -37,6 +84,7 @@ h2{
     padding-bottom: 20px;
     margin-top: 20px;
     margin-bottom: 20px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
 label{
@@ -50,10 +98,15 @@ label{
 
 input{
     width: 80%;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     font-size: 14px;
     border:1px solid grey;
     border-radius: 2px;
+}
+
+input:focus, input:focus-visible{
+    border-color: blue;
+    outline: none;
 }
 
 input:invalid{
@@ -68,4 +121,32 @@ ul{
 
 form{
     display: flex;
+}
+
+button{
+    padding: 10px 30px;
+    background-color: var(--dusky-green);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+button:active{
+    opacity: 0.85;
+}
+
+.below{
+    font-size: 0.8rem;
+}
+
+a{
+    font-weight: 600;
+    color: var(--dusky-green);
+    text-decoration: none;
 }
