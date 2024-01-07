@@ -90,18 +90,18 @@ h2{
 label{
     display: block;
     font-size: 10px;
-    line-height: 0.5;
     letter-spacing: 1px;
     font-weight: 700;
     color: rgb(75, 75, 75);
 }
 
 input{
-    width: 80%;
+    width: 70%;
     margin-bottom: 20px;
     font-size: 14px;
     border:1px solid grey;
     border-radius: 2px;
+    padding: 3px 10px;
 }
 
 input:focus, input:focus-visible{
