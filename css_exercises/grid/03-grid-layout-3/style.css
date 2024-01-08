@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 4px;
+  }
+  
+  .container div {
+    padding: 15px;
+    font-size: 32px;
+    font-family: Helvetica;
+    font-weight: bold;
+    color: white;
+  }
+  
+  .header {
+    background-color: #393f4d;
+    grid-area: 1/1/2/-1;
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    place-items: center;
+  }
+
+  .logo{
+    grid-column: 1/2;
+    place-self: start;
+  }
+
+  .menu{
+    width: 100%;
+  }
+
+  .menu ul{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    list-style: none;
+  }
+  
+  .menu ul,
+  .menu li {
+    font-size: 16px;
+  }
+
+  .sidebar {
+    background-color: #C50208;
+    grid-area: 2/1/4/2;
+    display: grid;
+    gap: 50px;
+  }
+  
+  .sidebar .photo {
+    background-color: white;
+    color: black;
+    font-size: 12px;
+    font-weight: normal;
+    border-radius: 10px;
+  }
+  
+  
+  .sidebar .side-content {
+    background-color: white;
+    color: black;
+    font-size: 16px;
+    font-weight: normal;
+  }
+
+  .sidebar .photo, .sidebar .side-content{
+    display: grid;
+    place-items: center;
+  }
+  
+  .nav {
+    background-color: #C50208;
+    grid-area: 2/2/3/3;
+  }
+
+  .nav ul{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    list-style: none;
+  }
+  
+  .nav ul li {
+    font-size: 16px;
+    text-transform: uppercase;
+  }
+  
+  .article {
+    background-color: #bccbde;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+  }
+  
+  .article p {
+    font-size: 18px;
+    font-family: sans-serif;
+    color: white;
+    text-align: left;
+  }
+  
+  .article .card {
+    background-color: #FFFFFF;
+    color: black;
+    text-align: center;
+    height: 200px;
+  }
+  
+  .card p {
+    color: black;
+    font-weight: normal;
+    font-size: 14px;
+  }
+  
+  .card .title {
+    font-size: 18px;
+    text-align: center;
+  }
+  
+  .footer {
+    background-color: #393f4d;
+    grid-column: 1/-1;
+  }
+  
+  .footer p {
+    font-size: 13px;
+    font-weight: normal;
+  }
