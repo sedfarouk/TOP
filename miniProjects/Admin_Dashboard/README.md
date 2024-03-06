@@ -13,5 +13,5 @@
 ## The Page I Designed
 <hr>
 
-![image_requirement](./Screenshots/the_page.png)
+![image_requirement](./Screenshots/the_page.PNG)
 
