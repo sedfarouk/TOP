@@ -38,7 +38,7 @@ ul > li{
 
 .main{
     display: grid;
-    grid-template: 1fr 5fr / 100%;
+    grid-template: 150px calc(100%-150px) / 100%;
     grid-column: 2/-1;
 }
 
@@ -195,7 +195,8 @@ ul > li{
     margin-left: 18px;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 50px;
+    height: 600px;
 }
 
 .info > div{
