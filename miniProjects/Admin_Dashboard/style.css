@@ -1,0 +1,257 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    min-height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    display: grid;
+    grid-template: 100% / 1fr 5fr;
+}
+
+ul > li{
+    list-style: none;
+    padding-bottom: 25px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.bi{
+    padding-right: 18px;
+}
+
+.sidebar{
+    grid-column: 1/2;
+    display: grid;
+    grid-template-rows: 50px repeat(auto-fit, minmax(100px, 1fr));
+    gap: 40px;
+    background-color: #0284c7;
+    color: white;
+    padding: 30px;
+}
+
+.side-title{
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.main{
+    display: grid;
+    grid-template: 1fr 5fr / 100%;
+    grid-column: 2/-1;
+}
+
+.main .header{
+    display: flex;
+    flex-direction: column;
+}
+
+.header div{
+    flex-basis: 50%;
+    background-color: white;
+}
+
+.header > div{
+    display: grid;
+    grid-template-columns: 3fr 1fr; 
+}
+
+.top-nav, .down-nav > div{
+    margin: 13px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.top-nav input[type="text"]{
+    border: none;
+    border-radius: 20px;
+    width: 700px;
+    background-color: rgba(174, 199, 218, 0.39);
+    height: 28px;
+    padding-left: 10px;
+}
+
+.search{
+    display: flex;
+    align-items: center;
+    grid-column: 1/2;
+}
+
+.profile{
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 500;
+    grid-column: 2/3;
+}
+
+.profile img{
+    height: 34px;
+    vertical-align: middle;
+    border-radius: 17px;
+}
+
+.down-nav{
+    box-shadow: rgba(199, 199, 199, 0.918) 0px 25px 20px -20px;
+}
+
+.down-nav img{
+    height: 60px;
+    border-radius: 50%;
+}
+
+.down-nav .greet{
+    display: flex;
+    align-items: center;
+    grid-column: 1/2;
+}
+
+.greet .msg{
+    padding-left: 20px;
+    font-weight: bold;
+}
+
+.down-nav .actions{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+    justify-content: center;
+    align-items: center;
+}
+
+.down-nav button{
+    height: 36px;
+    border-radius: 18px;
+    width: 100px;
+    border: none;
+    background-color: #0284c7;
+    color: white;
+    font-weight: bold;
+}
+
+.main .content{
+    background-color: rgba(174, 199, 218, 0.39);
+    display: grid;
+    grid-template-columns: 3fr 1fr; 
+    padding: 20px;
+    padding-top: 30px;
+}
+
+.content .projects{
+    grid-column: 1/2;  
+}
+
+.content p{
+    color: grey;
+}
+
+#title{
+    font-size: 18px;
+    font-weight: 500;
+    padding-bottom: 10px;
+}
+
+.projects .cards{
+    display: grid;
+    grid-template: 220px/ repeat(auto-fit, minmax(300px, 1fr));
+    grid-auto-rows: 220px;
+    gap: 20px;
+}
+
+.projects .card{
+    background-color: #fff;
+    border-left: 8px solid orange;
+    border-radius: 8px;
+    padding:20px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    display: grid;
+    grid-template: 1fr 1fr / 100%;
+    grid-template-rows: card-content btns;
+    gap: 10px;
+}
+
+.cards h4{
+    padding-bottom: 8px;
+}
+
+.card .card-content{
+    grid-area: card-content card-content;
+    font-size: 14px;
+}
+
+.card .btns{
+    grid-area: btns btns;
+    display: flex;
+    justify-content:flex-end;
+    align-items: flex-end;
+}
+
+.content .info{
+    grid-column: 2/3;
+    margin-left: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.info > div{
+    flex-basis: 50%;
+}
+
+.info .announcement-box, .trend-box{
+    background-color: #fff;
+    border-radius: 3%;
+    padding: 20px;
+    font-size: 14px;
+    justify-content: center;
+}
+
+.info .trend-box{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.info .announcement-box{
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.announcement-box p{
+    font-size: 12px;
+}
+
+.announcement-box #sub-head{
+    font-size: 12px;
+}
+
+.trend-box .posts{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.posts img{
+    height: 40px;
+    border-radius: 50%;
+}
+
+.trend-box #handle{
+    color: black;
+    font-size: 12px;
+}
+
+.trend-box p{
+    font-size: 12px;
+}
+
+
+
+
+
